@@ -36,3 +36,10 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+# Add the pg gem in the production environment
+# to allow Rails to talk to Postgres
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
